@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 style="color: purple;">Checkout</h1>
+        <hr>
+        <div>
+            <p>Have a coupon? <button type="button" name="button" style="color: blue;">Click here to enter your code</button></p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Billing details</legend>
+                <div>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div>
+                    <br>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div>
+                    <br>
+                    <label for="address">Street Address</label>
+                    <br>
+                    <textarea rows="2" cols="30" id="address" required placeholder="House no,street,apartment.."></textarea>
+                </div>
+                <div>
+                    <br>
+                    <label for="town">Town/ City</label>
+                    <br>
+                    <input type="text" id="town" required>
+                </div>
+                <div>
+                    <br>
+                    <label for="distirct">District</label><br>
+                    <select name="distirct" id="distirct" placeholder="Select an option.." required>
+                            <option name="d1" value="d">Dhaka</option>
+                            <option name="d2" value="ct">Chattogram</option>
+                            <option name="d3" value="tn">Tangail</option>
+                            <option name="d4" value="br">Barishal</option>
+                            <option name="d5" value="th">Thakurgaon</option>
+                            <option name="d6" value="nj">Narayanganj</option>
+                            <option name="d7" value="js">jashore</option>
+                            <option name="d8" value="dn">Dinajpur</option>
+                            <option name="d9" value="sh">Satkhira</option>
+                        </select>
+                    </select>
+                </div>
+                <div>
+                    <br>
+                    <label for="phone">Phone</label><br>
+                    <input type="text" id="phone" name="phone" required>    
+                </div>
+                <div>
+                    <br>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+            </fieldset>
+        </form>
+        <br>
+        <table border="1">
+
+            <caption>Your order</caption>
+            <tr>
+                <th>Product</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>product*amount</td>
+                <td>amount</td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td>amount</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>amount</td>
+            </tr>
+            <tr>
+                <td>Delivery charges</td>
+                <td>amount</td>
+            </tr>
+        </table>
+        <br>
+        <form>
+            <div>
+                <label for="payment">Payment methods</label><br>
+                <input type="radio" name="payment" id="payment" value="cod">Cash on delivery<br>
+                <input type="radio" name="payment" id="payment" value="bkash">bKash<br>
+                <input type="radio" name="payment" id="payment" value="online">Pay Online<br>
+            </div>
+               
+        </form>
+        <br>
+        <button type="button" name="button" style="color:black;">PLACE ORDER</button>
+    </body>
+</html>
